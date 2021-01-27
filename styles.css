@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body 
+{
+    background-color: black;
+}
+
+.navbar
+{
+    width:60%;
+    height:40px;
+    margin:0 auto;
+    display: flex;
+    color:white;
+    justify-content: space-between;
+    font-size:1.3rem;
+    align-items: center;
+}
+
+.rest span
+{
+    padding:0 10px;
+}
+span a 
+{
+    text-decoration: none;
+}
+
+section
+{
+    width:100%;
+    height:100vh;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagesBox
+{
+    overflow: hidden;
+}
+.imagesBox img{
+    width:350px;
+    height:350px;
+    animation: rightdisplay 3s ease;
+}
+.box
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.text
+{
+    margin-left:40px;
+    overflow: hidden;
+}
+.first::first-letter
+{
+    font-size:100px;
+    color:#120078;
+}
+.first {
+    font-size:35px;
+    position:relative;
+    animation: leftdisplay 2s ease;
+}
+@keyframes leftdisplay
+{
+    from
+    {
+        transform: translateX(170px);
+    }
+}
+.first span 
+{
+    color:crimson;
+    font-size:50px;
+}
+.second 
+{
+    font-size:30px;
+    position:relative;
+    animation:rightdisplay 3s ease;
+}
+@keyframes rightdisplay
+{
+    from{
+        transform:translateX(-380px)
+    }
+}
+.second span
+{
+    font-size:70px;
+    color:orange;
+}
+.third
+{
+    font-size:30px;
+    position:relative;
+    animation:bottomdisplay 4s ease;
+}
+@keyframes bottomdisplay
+{
+    from{
+        transform:translateX(420px);
+    }
+}
+.third span 
+{
+    font-size:70px;
+    color:green;
+}
