@@ -10,12 +10,11 @@ body
 
 .navbar
 {
-    width:60%;
     height:40px;
     margin:0 auto;
     display: flex;
     color:white;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size:1.3rem;
     align-items: center;
 }
@@ -113,4 +112,15 @@ section
 {
     font-size:70px;
     color:green;
+}
+@media screen and (max-width: 600px)
+{
+    .box
+    {
+        flex-direction: column;
+    }
+    .text
+    {
+        margin-left:0;
+    }
 }
